@@ -9,11 +9,15 @@ import { personaje } from './personaje';
 export class DataService {
 
   constructor(private httpClient: HttpClient) {
-    console.log("Servicio funcionando");
+    
   }
 
   getData(){
-    return this.httpClient.get<personaje[]>('http://laravel.test/');
+    return this.httpClient.get<personaje[]>('http://laravel.test/personajes');
+  }
+
+  getPersonaje(){
+    return this.httpClient.get('http://laravel.test/personaje/1');
   }
 
 }

@@ -15,8 +15,6 @@ export class AppComponent {
     });
   }
 
-  title = 'star-wars-api-consume';
-
   personajes = [];
 
 }
