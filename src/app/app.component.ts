@@ -11,14 +11,12 @@ export class AppComponent {
 
   constructor(private dataService: DataService){
     this.dataService.getData().subscribe(data =>{
-      console.log(data);
+      this.personajes = data;
     });
   }
 
   title = 'star-wars-api-consume';
 
   personajes = [];
-
-
 
 }
